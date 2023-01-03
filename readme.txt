@@ -12,14 +12,14 @@ Program Usage
 			        -o <feature output filename>
 
 Datasets
-	sample data files were provided to test the efficacy of the CVFS program. Please unzip the CSV files using the following command:
+	sample data files were provided to test the efficacy of the SVM program. Please unzip the CSV files using the following command:
 
 Example command:
 	(Simple run using default command; assume running on the ampicillin.csv dataset)
 	$ python3 SVM.py -i ampicillin.csv -o ampicillin.csv
 
 Contributing authors
-Ming-Ren Yang 
+Ming-Ren Yang, Shun-Feng Su, Yu-Wei Wu
 Graduate Institute of Biomedical Informatics, Taipei Medical University, Taipei, Taiwan
 
 Version
