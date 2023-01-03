@@ -65,17 +65,17 @@ for line in tqdm(range(0,c.shape[1],1)):
 c = c.iloc[0:,:point+1]
 model = SVC(kernel='linear')
 scores = cross_val_score(model, c, y, cv=10, scoring='roc_auc')
-print("Extracted ", c.shape[1]," features\n")
+print("Extracted ", c.shape[1],"  features")
 print("Classification use linear roc_auc of the dataset using extracted features is", round(scores.mean(),4));
 
 outF = open(outputfile, "w")		
 outF.write("Extracted ")
 outF.write(str(c.shape[1]))
-outF.write("features\n")
+outF.write(" features\n")
 outF.write("Classification roc_auc of the dataset using extracted features is ")
 outF.write(str(round(scores.mean(),4)))
 outF.write("\n")
-outF.write("importance score:")
+outF.write("Extracted features:")
 outF.write("\n")
 for line in c.columns.values:
 	outF.write(line)
