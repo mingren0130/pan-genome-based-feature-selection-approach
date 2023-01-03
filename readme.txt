@@ -19,7 +19,7 @@ Example command:
 	$ python3 SVM.py -i ampicillin.csv -o ampicillin.csv
 
 Contributing authors
-Ming-Ren Yang, Shun-Feng Su, Yu-Wei Wu
+Ming-Ren Yang, Yu-Wei Wu
 Graduate Institute of Biomedical Informatics, Taipei Medical University, Taipei, Taiwan
 
 Version
