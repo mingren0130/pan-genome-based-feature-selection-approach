@@ -34,7 +34,7 @@ df = pd.read_csv(inputfile,dtype={'genome_id':str})
 print('load ok')
 X = df.iloc[0:,2:]
 y = df['resistant_phenotype']
-xg_reg = model = XGBClassifier(use_label_encoder=False,eval_metric="auc")
+xg_reg = model = XGBClassifier(use_label_encoder=False,eval_metric="auc",n_estimators=500)
 xg_reg.fit(X, y) 
 feature_important = xg_reg.get_booster().get_score(importance_type='gain')
 keys = list(feature_important.keys())
